@@ -1,14 +1,17 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
+<p>
+  A selection of embedded systems, real-time, and hardware-software projects.
+  Each project links to a detailed write-up with design decisions, architecture diagrams, and results.
+</p>
+
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
+{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
